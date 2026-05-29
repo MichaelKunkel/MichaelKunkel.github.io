@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Kunkel</title>
+    
+    <style>
+        /* Ultra-minimalist CSS */
+        :root {
+            --bg-color: #fafafa; /* Very soft off-white */
+            --text-color: #111111; /* Near black for sharp contrast */
+            --muted-text: #888888;
+        }
+
+        body {
+            /* Uses the native, clean fonts of whatever device the user is on */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 18px; 
+            
+            /* The secret to this layout: Keep it narrow and centered */
+            max-width: 600px; 
+            margin: 0 auto; 
+            
+            /* Massive padding at the top to push content down elegantly */
+            padding: 12vh 20px 10vh 20px; 
+            
+            /* Makes the text render incredibly smooth */
+            -webkit-font-smoothing: antialiased; 
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 3em;
+            margin-bottom: 0.8em;
+            color: var(--text-color);
+        }
+
+        .intro {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 3em;
+        }
+
+        ul {
+            list-style-type: none; /* Removes the standard ugly bullet points */
+            padding-left: 0;
+            margin-top: 0;
+        }
+
+        li {
+            margin-bottom: 0.6em;
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        /* Adds a clean dash instead of a bullet point */
+        li::before {
+            content: "— "; 
+            color: var(--muted-text);
+        }
+
+        a {
+            color: var(--text-color);
+            text-decoration: underline;
+            text-underline-offset: 4px; /* Drops the underline slightly lower for a cleaner look */
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.5; /* Simple fade effect when hovering over links */
+        }
+
+        .footer {
+            margin-top: 4em;
+            padding-top: 2em;
+            border-top: 1px solid #eaeaea;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Michael Kunkel</h1>
+
+    <div class="intro">
+        Hey, I'm Michael 👋 an aspiring developer. I'm currently learning how to code and building out my corner of the internet.
+    </div>
+
+    <h2>A few fun things about me:</h2>
+    <ul>
+        <li>I love exploring new technologies and solving problems.</li>
+        <li>I built this website entirely from scratch.</li>
+        <li>I am an ultimate optimist.</li>
+    </ul>
+
+    <h2>What I'm working on right now:</h2>
+    <ul>
+        <li>Mastering HTML, CSS, and GitHub Pages.</li>
+        <li>Building my portfolio to document my learning journey.</li>
+        <li>Setting up my development environment in VS Code.</li>
+    </ul>
+
+    <h2>Interests:</h2>
+    <ul>
+        <li>Software architecture and clean code.</li>
+        <li>Minimalist web design and typography.</li>
+        <li>Finding the perfect cup of coffee.</li>
+    </ul>
+
+    <div class="footer">
+        Find me on <a href="https://github.com/MichaelKunkel" target="_blank">GitHub</a> or shoot me an <a href="mailto:your@email.com">email</a>.
+    </div>
+
+</body>
+</html>
