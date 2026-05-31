@@ -73,7 +73,7 @@ body {
 
 .project-card {
     display: flex;
-    align-items: center;
+    align-items: flex-start; 
     gap: 30px;
     margin-bottom: 3em;
 }
@@ -196,4 +196,47 @@ nav a:hover {
     padding: 10px 20px; /* Optional: Adds some breathing room if you use a background color */
     border-radius: 8px; /* Optional: Rounds the corners */
     transition: 0.2s ease; /* Makes the hover effect smooth */
+}
+
+.about-img {
+    width: 35%;
+    height: auto;
+    border-radius: 4px;
+    
+    aspect-ratio: 3/5; 
+    
+    object-fit: cover; 
+    
+    object-position: top;
+    margin-top: 90px; 
+}
+
+.about-text {
+    width: 65%;
+}
+
+/* Mobile Phone Adjustments */
+@media (max-width: 600px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-img,
+    .project-text {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-img {
+        width: 100%; 
+        
+        aspect-ratio: 1/1; 
+        
+        margin-top: 0; 
+        margin-bottom: 20px;
+    }
+    
+    .about-text {
+        width: 100%;
+    }
 }
