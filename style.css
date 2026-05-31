@@ -244,6 +244,6 @@ nav a:hover {
         width: 100%;
     }
     .about-text p {
-    text-align: justify;
+    text-align: justify !important;
 }
 }
