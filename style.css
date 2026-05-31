@@ -214,6 +214,9 @@ nav a:hover {
 .about-text {
     width: 65%;
 }
+.about-text p {
+    text-align: justify;
+}
 
 /* Mobile Phone Adjustments */
 @media (max-width: 600px) {
