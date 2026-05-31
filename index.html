@@ -1,148 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Kunkel</title>
-    
-    <style>
-        :root {
-            --bg-color: #fafafa;
-            --text-color: #111111;
-            --muted-text: #888888;
-        }
+    <title>About Me - Michael Kunkel</title>
 
-        /* 1. Remove margins from the body so images touch the edges */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* 2. The Full-Screen Hero Section */
-        .hero {
-            height: 100vh; /* 100% of the browser window height */
-            width: 100%;
-            position: relative;
-            
-            /* Put your background image here */
-            background-image: url('images/background.jpg'); 
-            background-color: #333; /* Fallback color if image doesn't load */
-            background-size: cover;
-            background-position: center;
-            
-            /* Flexbox perfectly centers everything inside this section */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        /* Optional: A dark overlay so your white text/profile pic is easier to read over the background */
-        .hero-overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* 50% dark tint */
-            z-index: 1;
-        }
-
-        /* Puts the content above the dark overlay */
-        .hero-content {
-            z-index: 2;
-            color: white;
-        }
-
-        /* Profile Picture Styling */
-        .profile-pic {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%; /* Makes it a perfect circle */
-            object-fit: cover;
-            border: 4px solid white; /* Adds a nice white ring around the photo */
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-            margin: 0 0 10px 0;
-            color: white;
-        }
-
-        .hero p {
-            font-size: 22px;
-            margin: 0;
-            color: #eeeeee;
-        }
-
-        /* 3. The Content Container (Everything below the full-screen image) */
-        .content {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 10vh 20px 10vh 20px; /* Brings back the breathing room for the text */
-            line-height: 1.6;
-            font-size: 18px;
-        }
-
-        /* Text styling for the lower section */
-        .content h2 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 3em;
-            margin-bottom: 0.8em;
-        }
-
-        ul { list-style-type: none; padding-left: 0; margin-top: 0; }
-        li { margin-bottom: 0.6em; padding-left: 1.5em; text-indent: -1.5em; }
-        li::before { content: "— "; color: var(--muted-text); }
-        
-        a { color: var(--text-color); text-decoration: underline; text-underline-offset: 4px; }
-        a:hover { opacity: 0.5; }
-
-        nav { margin-bottom: 3em; font-size: 16px; font-weight: bold; }
-        nav a { margin-right: 20px; color: var(--muted-text); text-decoration: none; }
-        nav a.active { color: var(--text-color); text-decoration: underline; text-underline-offset: 4px; }
-        nav a:hover { color: var(--text-color); }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <img src="images/profile.jpg" alt="Michael Kunkel" class="profile-pic">
-            <h1>Michael Kunkel</h1>
-            <p>Biomedical Engineering Student</p>
-        </div>
-    </header>
+    <div class="content" style="margin-top: 5em;">
 
-    <div class="content">
         <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html" class="active">Home</a>
+            <a href="projects.html"> Portfolio</a>
         </nav>
 
-        <div style="font-size: 22px; margin-bottom: 3em;">
-            Hey, I'm Michael 👋 an aspiring developer. I'm currently learning how to code and building out my corner of the internet.
+        <div class="project-card" style="margin-top: 2em;">
+
+            <img src="images/profile.png" alt="Michael Kunkel" class="project-img"
+                style="border-radius: 50%; width: 35%; object-fit: cover; aspect-ratio: 1/1;">
+
+            <div class="project-text" style="width: 65%;">
+                <h3 style="text-align: left;">Hi, I'm Michael.</h3>
+                <p> I moved to Canada at age 16 for an exchange program to experience a Western academic environment
+                    and explore a pathway to medical school. Today, I am a second-year biomedical engineering student at
+                    the University of Victoria. My academic and professional focus is the intersection of healthcare,
+                    robotics and artificial intelligence, with a specific interest in how innovative medical devices can
+                    transform clinical practice.
+
+                <p>Outside of my academic work, music remains a foundational part of my life. I am a self-taught pianist
+                    and guitarist, a constant pursuit that balances technical discipline with creative expression. This
+                    appreciation for shared experiences naturally extends to my community, where I actively value
+                    meeting new people and exploring diverse perspectives. To maintain a well-rounded routine, I also
+                    seek out dynamic, hands-on challenges; I am an avid sailor, and whenever I have the opportunity, an
+                    enthusiastic cook.
+                <p>Whether moving across the world at 16 or navigating unpredictable conditions on a sailboat, I have
+                    never been deterred by risk; I am driven by it. I bring this same appetite for challenge to my
+                    professional pursuits. Ultimately, my ambition is to step into the complex, high-stakes intersection
+                    of engineering and clinical medicine. By leveraging automation and artificial intelligence, I want
+                    to tackle the difficult problems others might avoid, developing innovative devices that tangibly
+                    improve patient outcomes.</p>
+
+                <h3 style="text-align: left; margin-top: 2em;">Let's Connect</h3>
+                <p>
+                    <a href="mailto:michaelp.kunkel@gmail.com">Email Me</a> |
+                    <a href="https://www.linkedin.com/in/michalkunkel/" target="_blank">LinkedIn</a>
+                </p>
+            </div>
+
         </div>
 
-        <h2>A few fun things about me:</h2>
-        <ul>
-            <li>I love exploring new technologies and solving problems.</li>
-            <li>I built this website entirely from scratch.</li>
-            <li>I am an ultimate optimist.</li>
-        </ul>
-
-        <h2>What I'm working on right now:</h2>
-        <ul>
-            <li>Mastering HTML, CSS, and GitHub Pages.</li>
-            <li>Building my portfolio to document my learning journey.</li>
-            <li>Setting up my development environment in VS Code.</li>
-        </ul>
     </div>
 
 </body>
+
+
 </html>
